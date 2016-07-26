@@ -19,19 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.makeKeyWindow()
         
-        let leilei = LeiLeiViewController()
-        leilei.title = "LeiLei"
-        leilei.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.TopRated, tag: 0)
-        
-        let yuan = YuanViewController()
-        yuan.title = "Yuan"
-        yuan.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.History, tag: 1)
-        
-        let nav = UINavigationController(rootViewController: leilei)
-        let nav2 = UINavigationController(rootViewController: yuan)
+        let leileiViewController = LeiLeiViewController()
+        leileiViewController.title = "旺磊的地盘"
+   
+        let yuanViewController = YuanViewController()
+        yuanViewController.title = "张远的地盘"
+      
+        let nav0 = UINavigationController(rootViewController: leileiViewController)
+        let nav1 = UINavigationController(rootViewController: yuanViewController)
         
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [nav, nav2]
+        tabbar.viewControllers = [nav0, nav1]
         window?.rootViewController = tabbar
         
         return true

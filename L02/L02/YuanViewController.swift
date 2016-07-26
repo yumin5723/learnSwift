@@ -16,6 +16,10 @@ class YuanViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = UIColor.blackColor()
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = UIImage(named: "yuan_background.jpg")
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill;
+        self.view.addSubview(imageView)
     }
     
     override func didReceiveMemoryWarning() {
