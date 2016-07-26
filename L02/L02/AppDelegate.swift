@@ -16,6 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyWindow()
+        
+        let leilei = LeiLeiViewController()
+        leilei.title = "LeiLei"
+        leilei.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.TopRated, tag: 0)
+        
+        let yuan = YuanViewController()
+        yuan.title = "Yuan"
+        yuan.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.History, tag: 1)
+        
+        let nav = UINavigationController(rootViewController: leilei)
+        let nav2 = UINavigationController(rootViewController: yuan)
+        
+        let tabbar = UITabBarController()
+        tabbar.viewControllers = [nav, nav2]
+        window?.rootViewController = tabbar
+        
         return true
     }
 
