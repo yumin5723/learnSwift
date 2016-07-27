@@ -13,12 +13,9 @@
 		97A4B14D1D4745D600BC9D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B14B1D4745D600BC9D14 /* LaunchScreen.storyboard */; };
 		97A4B1581D4745D600BC9D14 /* L02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B1571D4745D600BC9D14 /* L02Tests.swift */; };
 		97A4B1631D4745D600BC9D14 /* L02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B1621D4745D600BC9D14 /* L02UITests.swift */; };
-		97A4B1711D48643900BC9D14 /* leilei_tabar_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B1701D48643900BC9D14 /* leilei_tabar_icon@2x.png */; };
 		A8738F6E1D476D5F00E6077B /* LeiLeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */; };
 		A8738F701D476D6F00E6077B /* YuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6F1D476D6F00E6077B /* YuanViewController.swift */; };
 		A8738F771D4852A000E6077B /* YuanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */; };
-		A8738F7A1D4854A200E6077B /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8738F781D4854A200E6077B /* 1.jpg */; };
-		A8738F7B1D4854A200E6077B /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8738F791D4854A200E6077B /* 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +48,9 @@
 		97A4B15E1D4745D600BC9D14 /* L02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A4B1621D4745D600BC9D14 /* L02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L02UITests.swift; sourceTree = "<group>"; };
 		97A4B1641D4745D600BC9D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97A4B1701D48643900BC9D14 /* leilei_tabar_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leilei_tabar_icon@2x.png"; path = "../../../../../../Downloads/cloud_images/leilei_tabar_icon@2x.png"; sourceTree = "<group>"; };
 		A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeiLeiViewController.swift; sourceTree = "<group>"; };
 		A8738F6F1D476D6F00E6077B /* YuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanViewController.swift; sourceTree = "<group>"; };
 		A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanDetailsViewController.swift; sourceTree = "<group>"; };
-		A8738F781D4854A200E6077B /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		A8738F791D4854A200E6077B /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				97A4B1411D4745D600BC9D14 /* L02 */,
-				A8738F711D47792F00E6077B /* Resource */,
 				97A4B1561D4745D600BC9D14 /* L02Tests */,
 				97A4B1611D4745D600BC9D14 /* L02UITests */,
 				97A4B1401D4745D600BC9D14 /* Products */,
@@ -136,17 +129,6 @@
 				97A4B1641D4745D600BC9D14 /* Info.plist */,
 			);
 			path = L02UITests;
-			sourceTree = "<group>";
-		};
-		A8738F711D47792F00E6077B /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				97A4B1701D48643900BC9D14 /* leilei_tabar_icon@2x.png */,
-				A8738F781D4854A200E6077B /* 1.jpg */,
-				A8738F791D4854A200E6077B /* 2.jpg */,
-			);
-			name = Resource;
-			path = L02/Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,12 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8738F7B1D4854A200E6077B /* 2.jpg in Resources */,
 				97A4B14D1D4745D600BC9D14 /* LaunchScreen.storyboard in Resources */,
-				97A4B1711D48643900BC9D14 /* leilei_tabar_icon@2x.png in Resources */,
 				97A4B14A1D4745D600BC9D14 /* Assets.xcassets in Resources */,
 				97A4B1481D4745D600BC9D14 /* Main.storyboard in Resources */,
-				A8738F7A1D4854A200E6077B /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
