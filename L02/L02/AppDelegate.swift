@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let leileiViewController = LeiLeiViewController()
         leileiViewController.title = "旺磊的地盘"
-   
+        leileiViewController.initTabarItem()
         let yuanViewController = YuanViewController()
         yuanViewController.title = "张远的地盘"
       

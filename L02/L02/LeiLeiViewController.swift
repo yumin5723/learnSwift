@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LeiLeiViewController: UIViewController {
+class LeiLeiViewController: UIViewController,UITabBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,11 @@ class LeiLeiViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func initTabarItem(){
+        let firstImage = UIImage(named:"pie bar icon")
+        self.tabBarItem = UITabBarItem(title: "首页",image: firstImage,tag: 0)
     }
     
     
