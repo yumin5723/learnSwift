@@ -22,6 +22,10 @@ class YuanViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.view.backgroundColor = UIColor.whiteColor()
         
+        let img = UIImage(named: "3.jpg")
+        self.tabBarItem = UITabBarItem(title: "",image: img, tag: 1)
+        UITabBar.appearance().tintColor = UIColor.redColor()
+        
         _dataSource = ["Anglababy", "柳岩"]
         _tableView = UITableView(frame: self.view.bounds, style: UITableViewStyle.Plain)
         _tableView?.backgroundColor = UIColor.whiteColor()

@@ -18,11 +18,11 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
 
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.brownColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         self.title = "五月天-天使"
         let image = UIImage(named:"473976-XXL")
         _imageView = UIImageView(image: image)
-//        _imageView!.frame=CGRectMake(0,0,image!.size.width,image!.size.height)
+        _imageView!.frame=self.view.bounds
         _imageView!.contentMode = .ScaleAspectFit
         self.view.addSubview(_imageView!)
 
