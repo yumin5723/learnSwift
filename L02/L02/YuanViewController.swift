@@ -58,7 +58,7 @@ class YuanViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
-        return 45
+        return 88
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -66,9 +66,12 @@ class YuanViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier", forIndexPath: indexPath) as UITableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.Blue
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-        let row = indexPath.row
-        let text = _dataSource![row] as! String
+        let row: Int = indexPath.row
+        let text: String = _dataSource![row] as! String
+        let image: UIImage = UIImage(named: String(format: "%i.jpg", indexPath.row+1))!
         cell.textLabel!.text = text
+        cell.imageView?.image = image
+        
         return cell
     }
     
