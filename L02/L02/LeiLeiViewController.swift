@@ -27,7 +27,7 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
         _imageView!.frame=self.view.bounds
         _imageView!.contentMode = .ScaleAspectFit
         self.view.addSubview(_imageView!)
-        
+  
         let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageTapped(_:)))
         _imageView!.userInteractionEnabled = true
         _imageView!.addGestureRecognizer(tapGestureRecognizer)
@@ -47,20 +47,6 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     
     func imageTapped(img: AnyObject)
     {
-        print(isDisplay)
-        //首先创建一个模糊效果
-        let blurEffect = UIBlurEffect(style: .Light)
-        //接着创建一个承载模糊效果的视图
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        //设置模糊视图的大小（全屏）
-        blurView.frame.size = CGSize(width: view.frame.width, height: view.frame.height)
-        
-        //创建并添加vibrancy视图
-        let vibrancyView = UIVisualEffectView(effect:
-            UIVibrancyEffect(forBlurEffect: blurEffect))
-        vibrancyView.frame.size = CGSize(width: view.frame.width, height: view.frame.height)
-        blurView.contentView.addSubview(vibrancyView)
-        
         //将文本标签添加到vibrancy视图中
         let image1 = UIImage(named:"mayday1")
         let maoimageView = UIImageView(image: image1)
@@ -77,13 +63,6 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
             }
             
         }
-        
-//        
-//        
-//        let hideSubView = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageDisprarTapped(_:)))
-//        maoimageView.userInteractionEnabled = true
-//        maoimageView.addGestureRecognizer(hideSubView)
-
         
     }
     
