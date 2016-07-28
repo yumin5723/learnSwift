@@ -13,6 +13,8 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     
     var layout0_: UIImage!
     var _imageView: UIImageView?
+    var refreshAlert:UIAlertController!
+    var isDisplay: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +27,11 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
         _imageView!.frame=self.view.bounds
         _imageView!.contentMode = .ScaleAspectFit
         self.view.addSubview(_imageView!)
-
+  
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageTapped(_:)))
+        _imageView!.userInteractionEnabled = true
+        _imageView!.addGestureRecognizer(tapGestureRecognizer)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +43,27 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
         let firstImage = UIImage(named:"pie bar icon")
         self.tabBarItem = UITabBarItem(title: "首页",image: firstImage, tag: 0)
         UITabBar.appearance().tintColor = UIColor.redColor()
+    }
+    
+    func imageTapped(img: AnyObject)
+    {
+        //将文本标签添加到vibrancy视图中
+        let image1 = UIImage(named:"mayday1")
+        let maoimageView = UIImageView(image: image1)
+        maoimageView.frame=self.view.bounds
+        maoimageView.contentMode = .ScaleAspectFit
+//        vibrancyView.contentView.addSubview(maoimageView)
+        if isDisplay == 0 {
+            _imageView!.addSubview(maoimageView)
+            isDisplay = 1
+        } else {
+            for maoimageView in _imageView!.subviews {
+                maoimageView.removeFromSuperview()
+                isDisplay = 0
+            }
+            
+        }
+        
     }
     
     
