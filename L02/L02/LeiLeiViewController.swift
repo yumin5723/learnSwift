@@ -14,6 +14,7 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     var layout0_: UIImage!
     var _imageView: UIImageView?
     var refreshAlert:UIAlertController!
+    var isDisplay: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +47,7 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     
     func imageTapped(img: AnyObject)
     {
+        print(isDisplay)
         //首先创建一个模糊效果
         let blurEffect = UIBlurEffect(style: .Light)
         //接着创建一个承载模糊效果的视图
@@ -65,9 +67,25 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
         maoimageView.frame=self.view.bounds
         maoimageView.contentMode = .ScaleAspectFit
 //        vibrancyView.contentView.addSubview(maoimageView)
+        if isDisplay == 0 {
+            _imageView!.addSubview(maoimageView)
+            isDisplay = 1
+        } else {
+            for maoimageView in _imageView!.subviews {
+                maoimageView.removeFromSuperview()
+                isDisplay = 0
+            }
+            
+        }
         
-        self.view.addSubview(maoimageView)
+//        
+//        
+//        let hideSubView = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageDisprarTapped(_:)))
+//        maoimageView.userInteractionEnabled = true
+//        maoimageView.addGestureRecognizer(hideSubView)
 
+        
     }
+    
     
 }
