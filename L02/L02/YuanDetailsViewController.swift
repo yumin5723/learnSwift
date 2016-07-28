@@ -15,6 +15,7 @@ class YuanDetailsViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         self.title = "Details"
@@ -22,6 +23,7 @@ class YuanDetailsViewController: UIViewController {
     }
     
     func setImage(imageName imageName: String) {
+        
         if imageView==nil {
             
             imageView = UIImageView(frame: self.view.bounds)
