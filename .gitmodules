@@ -1,0 +1,3 @@
+[submodule "CycleView"]
+	path = CycleView
+	url = https://github.com/SarielTang/CycleView.git

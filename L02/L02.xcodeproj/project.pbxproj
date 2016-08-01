@@ -13,6 +13,7 @@
 		97A4B14D1D4745D600BC9D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B14B1D4745D600BC9D14 /* LaunchScreen.storyboard */; };
 		97A4B1581D4745D600BC9D14 /* L02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B1571D4745D600BC9D14 /* L02Tests.swift */; };
 		97A4B1631D4745D600BC9D14 /* L02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B1621D4745D600BC9D14 /* L02UITests.swift */; };
+		97A4B2071D4F4F9200BC9D14 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B2061D4F4F9200BC9D14 /* CirCleView.swift */; };
 		A8738F6E1D476D5F00E6077B /* LeiLeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */; };
 		A8738F701D476D6F00E6077B /* YuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6F1D476D6F00E6077B /* YuanViewController.swift */; };
 		A8738F771D4852A000E6077B /* YuanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */; };
@@ -48,6 +49,7 @@
 		97A4B15E1D4745D600BC9D14 /* L02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A4B1621D4745D600BC9D14 /* L02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L02UITests.swift; sourceTree = "<group>"; };
 		97A4B1641D4745D600BC9D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A4B2061D4F4F9200BC9D14 /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CirCleView.swift; path = ../../GLCircleScrollView/GLCircleScrollVeiw/CirCleView.swift; sourceTree = "<group>"; };
 		A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeiLeiViewController.swift; sourceTree = "<group>"; };
 		A8738F6F1D476D6F00E6077B /* YuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanViewController.swift; sourceTree = "<group>"; };
 		A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanDetailsViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				97A4B1421D4745D600BC9D14 /* AppDelegate.swift */,
 				A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */,
+				97A4B2061D4F4F9200BC9D14 /* CirCleView.swift */,
 				A8738F6F1D476D6F00E6077B /* YuanViewController.swift */,
 				A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */,
 				97A4B1461D4745D600BC9D14 /* Main.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				A8738F771D4852A000E6077B /* YuanDetailsViewController.swift in Sources */,
 				A8738F6E1D476D5F00E6077B /* LeiLeiViewController.swift in Sources */,
+				97A4B2071D4F4F9200BC9D14 /* CirCleView.swift in Sources */,
 				97A4B1431D4745D600BC9D14 /* AppDelegate.swift in Sources */,
 				A8738F701D476D6F00E6077B /* YuanViewController.swift in Sources */,
 			);

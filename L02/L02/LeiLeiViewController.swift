@@ -15,6 +15,10 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     var _imageView: UIImageView?
     var refreshAlert:UIAlertController!
     var isDisplay: Int = 0
+    var scrollView:UIScrollView?
+    var image:UIImage?
+    var pageControl:UIPageControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,11 +30,16 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
         _imageView = UIImageView(image: image)
         _imageView!.frame=self.view.bounds
         _imageView!.contentMode = .ScaleAspectFit
+//        let focusImage = CirCleView.self
+//        focusImage.imageArray = [UIImage(named:"473976-XXL")]
         self.view.addSubview(_imageView!)
-  
-        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageTapped(_:)))
-        _imageView!.userInteractionEnabled = true
-        _imageView!.addGestureRecognizer(tapGestureRecognizer)
+//
+//        
+//        
+//        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(LeiLeiViewController.imageTapped(_:)))
+//        _imageView!.userInteractionEnabled = true
+//        _imageView!.addGestureRecognizer(tapGestureRecognizer)
+
         
     }
     
