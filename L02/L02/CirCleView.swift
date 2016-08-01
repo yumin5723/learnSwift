@@ -241,4 +241,3 @@ class CirCleView: UIView, UIScrollViewDelegate {
 
 
 
-
