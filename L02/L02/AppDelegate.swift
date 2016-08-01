@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabbar.viewControllers = [nav0, nav1]
         window!.rootViewController = tabbar
         
+        
         return true
     }
 
