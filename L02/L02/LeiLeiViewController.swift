@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LeiLeiViewController: UIViewController,UITabBarDelegate {
+class LeiLeiViewController: UIViewController,UITabBarDelegate,CirCleViewDelegate {
     
     var layout0_: UIImage!
     var _imageView: UIImageView?
@@ -18,6 +18,8 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
     var scrollView:UIScrollView?
     var image:UIImage?
     var pageControl:UIPageControl?
+    var circleView: CirCleView?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,12 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate {
 //        _imageView!.userInteractionEnabled = true
 //        _imageView!.addGestureRecognizer(tapGestureRecognizer)
 
+        let imageArray: [UIImage!] = [UIImage(named: "first.jpg"), UIImage(named: "second.jpg"), UIImage(named: "third.jpg")]
         
+        self.circleView = CirCleView(frame: CGRectMake(0, 64, self.view.frame.size.width, 200), imageArray: imageArray)
+        circleView!.backgroundColor = UIColor.orangeColor()
+        circleView!.delegate = self
+        self.view.addSubview(circleView!)
     }
     
     override func didReceiveMemoryWarning() {
