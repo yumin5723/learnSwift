@@ -11,7 +11,8 @@ import UIKit
 
 class YuanDetailsViewController: UIViewController {
 
-    var imageView: UIImageView? = nil
+    var scrollView: UIScrollView?
+    var imageView: UIImageView?
     
     
     override func viewDidLoad() {
@@ -24,12 +25,23 @@ class YuanDetailsViewController: UIViewController {
     
     func setImage(imageName imageName: String) {
         
+        if scrollView==nil {
+            
+            scrollView = UIScrollView(frame: self.view.bounds)
+            scrollView!.backgroundColor = UIColor.whiteColor()
+            self.view.addSubview(scrollView!)
+        }
         if imageView==nil {
             
-            imageView = UIImageView(frame: self.view.bounds)
-            imageView!.contentMode = UIViewContentMode.ScaleAspectFill;
-            self.view.addSubview(imageView!)
+            imageView = UIImageView()
+            imageView!.backgroundColor = UIColor.whiteColor()
+            imageView!.contentMode = UIViewContentMode.Center
+            scrollView!.addSubview(imageView!)
         }
-        imageView!.image = UIImage(named: imageName)
+        
+        let image: UIImage = UIImage(named: imageName)!
+        imageView!.image = image
+        imageView!.frame = CGRectMake(0, 0, image.size.width, image.size.height)
+        scrollView!.contentSize = CGSizeMake(image.size.width, image.size.height)
     }
 }

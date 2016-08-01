@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.makeKeyWindow()
+        window!.backgroundColor = UIColor.whiteColor()
+        window!.makeKeyWindow()
         
         let leileiViewController = LeiLeiViewController()
         leileiViewController.title = "旺磊的地盘"
@@ -31,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let tabbar = UITabBarController()
         tabbar.viewControllers = [nav0, nav1]
-        window?.rootViewController = tabbar
+        window!.rootViewController = tabbar
+        
         
         return true
     }
