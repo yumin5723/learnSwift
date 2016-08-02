@@ -32,8 +32,6 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate,CirCleViewDelegate
         _imageView = UIImageView(image: image)
         _imageView!.frame=self.view.bounds
         _imageView!.contentMode = .ScaleAspectFit
-//        let focusImage = CirCleView.self
-//        focusImage.imageArray = [UIImage(named:"473976-XXL")]
         self.view.addSubview(_imageView!)
 //
 //        
