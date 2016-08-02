@@ -130,7 +130,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         
         //标题label
         self.titleLabel = UILabel()
-        self.titleLabel.text = "hangge.com"
+        self.titleLabel.text = "swift.xuexi"
         self.titleLabel.textColor = UIColor.whiteColor()
         self.titleLabel.font = UIFont.systemFontOfSize(36)
         self.view.addSubview(self.titleLabel)
