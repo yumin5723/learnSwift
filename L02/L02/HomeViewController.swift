@@ -51,10 +51,10 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         
         //分隔线
         self.horizontalLine =  UIView()
-        self.horizontalLine.backgroundColor = UIColor.lightGrayColor()
+        self.horizontalLine.backgroundColor = UIColor.grayColor()
         self.formView.addSubview(self.horizontalLine)
         self.horizontalLine.snp_makeConstraints { (make) -> Void in
-            make.height.equalTo(0.5)
+            make.height.equalTo(1)
             make.left.equalTo(15)
             make.right.equalTo(-15)
             make.centerY.equalTo(self.formView)

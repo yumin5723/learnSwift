@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         yuanViewController.title = "加菲馆"
         
         let homeViewController = HomeViewController()
+        homeViewController.view.bounds = window!.bounds
         homeViewController.title = "我的"
         
       
