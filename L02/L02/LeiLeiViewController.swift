@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class LeiLeiViewController: UIViewController,UITabBarDelegate,CirCleViewDelegate {
     
@@ -46,6 +47,10 @@ class LeiLeiViewController: UIViewController,UITabBarDelegate,CirCleViewDelegate
         circleView!.backgroundColor = UIColor.orangeColor()
         circleView!.delegate = self
         self.view.addSubview(circleView!)
+        
+        circleView!.snp_makeConstraints { (make) in
+            make.right.equalTo(self.view)
+        }
     }
     
     override func didReceiveMemoryWarning() {

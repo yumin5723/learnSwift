@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let leileiViewController = LeiLeiViewController()
         leileiViewController.title = "旺磊的地盘"
         leileiViewController.initTabarItem()
+        
         let yuanViewController = YuanViewController()
         yuanViewController.view.bounds = window!.bounds
         yuanViewController.title = "加菲馆"
