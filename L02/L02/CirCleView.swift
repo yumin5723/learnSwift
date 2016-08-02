@@ -41,11 +41,17 @@ class CirCleView: UIView, UIScrollViewDelegate {
             //这里用了强制拆包，所以不要把urlImageArray设为nil
             for urlStr in self.urlImageArray! {
                 let urlImage = NSURL(string: urlStr)
-                if urlImage == nil { break }
+                if urlImage == nil {
+                    break
+                }
                 let dataImage = NSData(contentsOfURL: urlImage!)
-                if dataImage == nil { break }
+                if dataImage == nil {
+                    break
+                }
                 let tempImage = UIImage(data: dataImage!)
-                if tempImage == nil { break }
+                if tempImage == nil {
+                    break
+                }
                 imageArray.append(tempImage)
             }
         }
@@ -109,7 +115,7 @@ class CirCleView: UIView, UIScrollViewDelegate {
         contentScrollView.addSubview(currentImageView)
         
         //添加点击事件
-        let imageTap = UITapGestureRecognizer(target: self, action: Selector("imageTapAction:"))
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(CirCleView.imageTapAction(_:)))
         currentImageView.addGestureRecognizer(imageTap)
         
         self.lastImageView = UIImageView()
@@ -135,7 +141,7 @@ class CirCleView: UIView, UIScrollViewDelegate {
         self.addSubview(pageIndicator)
         
         //设置计时器
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(TimeInterval, target: self, selector: "timerAction", userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(TimeInterval, target: self, selector: #selector(CirCleView.timerAction), userInfo: nil, repeats: true)
     }
     
     //MARK: 设置图片
@@ -207,7 +213,7 @@ class CirCleView: UIView, UIScrollViewDelegate {
         
         //重置计时器
         if timer == nil {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(TimeInterval, target: self, selector: "timerAction", userInfo: nil, repeats: true)
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(TimeInterval, target: self, selector: #selector(CirCleView.timerAction), userInfo: nil, repeats: true)
         }
     }
     
