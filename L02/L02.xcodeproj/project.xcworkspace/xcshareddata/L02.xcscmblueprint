@@ -4,20 +4,27 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BF094ACA03C0B344315F732B853F303A18538F63" : 0,
     "D75E0BABFAF9877C9CD33FE326FAB61626F4E937" : 0,
-    "E110A13E4FB28EB6D4838414C4E9599A7EF817B2" : 0,
-    "BF094ACA03C0B344315F732B853F303A18538F63" : 0
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : 0,
+    "E110A13E4FB28EB6D4838414C4E9599A7EF817B2" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7F2F5464-D3E7-489A-B367-70CD1DF1218B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BF094ACA03C0B344315F732B853F303A18538F63" : "learnSwift\/GLCircleScrollView\/",
     "D75E0BABFAF9877C9CD33FE326FAB61626F4E937" : "CycleView\/",
-    "E110A13E4FB28EB6D4838414C4E9599A7EF817B2" : "learnSwift\/",
-    "BF094ACA03C0B344315F732B853F303A18538F63" : "learnSwift\/GLCircleScrollView\/"
+    "3AF18F9C6F5D633BAA0B3F935459E0C777C82047" : "SnapKit\/",
+    "E110A13E4FB28EB6D4838414C4E9599A7EF817B2" : "learnSwift\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "L02",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "L02\/L02.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SnapKit\/SnapKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3AF18F9C6F5D633BAA0B3F935459E0C777C82047"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/god-long\/GLCircleScrollView.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

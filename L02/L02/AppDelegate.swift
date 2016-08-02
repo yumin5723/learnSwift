@@ -26,12 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let yuanViewController = YuanViewController()
         yuanViewController.view.bounds = window!.bounds
         yuanViewController.title = "加菲馆"
+        
+        let homeViewController = HomeViewController()
+        homeViewController.title = "我的"
+        
       
         let nav0 = UINavigationController(rootViewController: leileiViewController)
         let nav1 = UINavigationController(rootViewController: yuanViewController)
+        let nav2 = UINavigationController(rootViewController: homeViewController)
         
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [nav0, nav1]
+        tabbar.viewControllers = [nav0, nav1, nav2]
         window!.rootViewController = tabbar
         
         

@@ -11,11 +11,87 @@
 		97A4B1481D4745D600BC9D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B1461D4745D600BC9D14 /* Main.storyboard */; };
 		97A4B14A1D4745D600BC9D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B1491D4745D600BC9D14 /* Assets.xcassets */; };
 		97A4B14D1D4745D600BC9D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A4B14B1D4745D600BC9D14 /* LaunchScreen.storyboard */; };
+		97A4B2781D50489300BC9D14 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4B2771D50489300BC9D14 /* HomeViewController.swift */; };
+		97A4B2DA1D504AF700BC9D14 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A4B2CD1D504ADE00BC9D14 /* SnapKit.framework */; };
+		97A4B2DB1D504AF700BC9D14 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97A4B2CD1D504ADE00BC9D14 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A8738F6E1D476D5F00E6077B /* LeiLeiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */; };
 		A8738F701D476D6F00E6077B /* YuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F6F1D476D6F00E6077B /* YuanViewController.swift */; };
 		A8738F771D4852A000E6077B /* YuanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */; };
 		A8BF7A441D4F5C7F00B43868 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF7A431D4F5C7F00B43868 /* CirCleView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A4B2CC1D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+		97A4B2CE1D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCE921C35CC8800B5B899;
+			remoteInfo = "SnapKit tvOS";
+		};
+		97A4B2D01D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX";
+		};
+		97A4B2D21D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit iOS Tests";
+		};
+		97A4B2D41D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537DCEAF1C35D90A00B5B899;
+			remoteInfo = "SnapKit tvOS Tests";
+		};
+		97A4B2D61D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
+			remoteInfo = "SnapKit OSX Tests";
+		};
+		97A4B2D81D504ADE00BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56A0DC091C859E30005973AB;
+			remoteInfo = "Example-iOS";
+		};
+		97A4B2DC1D504AF700BC9D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = "SnapKit iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		97A4B2DE1D504AF700BC9D14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				97A4B2DB1D504AF700BC9D14 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		97A4B13F1D4745D600BC9D14 /* L02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L02.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +100,8 @@
 		97A4B1491D4745D600BC9D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A4B14C1D4745D600BC9D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97A4B14E1D4745D600BC9D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A4B2771D50489300BC9D14 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../../../SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 		A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeiLeiViewController.swift; sourceTree = "<group>"; };
 		A8738F6F1D476D6F00E6077B /* YuanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanViewController.swift; sourceTree = "<group>"; };
 		A8738F761D4852A000E6077B /* YuanDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YuanDetailsViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A4B2DA1D504AF700BC9D14 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +139,7 @@
 		97A4B1411D4745D600BC9D14 /* L02 */ = {
 			isa = PBXGroup;
 			children = (
+				97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */,
 				97A4B1421D4745D600BC9D14 /* AppDelegate.swift */,
 				A8738F6D1D476D5F00E6077B /* LeiLeiViewController.swift */,
 				A8738F6F1D476D6F00E6077B /* YuanViewController.swift */,
@@ -69,8 +149,23 @@
 				97A4B1491D4745D600BC9D14 /* Assets.xcassets */,
 				97A4B14B1D4745D600BC9D14 /* LaunchScreen.storyboard */,
 				97A4B14E1D4745D600BC9D14 /* Info.plist */,
+				97A4B2771D50489300BC9D14 /* HomeViewController.swift */,
 			);
 			path = L02;
+			sourceTree = "<group>";
+		};
+		97A4B2C31D504ADE00BC9D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97A4B2CD1D504ADE00BC9D14 /* SnapKit.framework */,
+				97A4B2CF1D504ADE00BC9D14 /* SnapKit.framework */,
+				97A4B2D11D504ADE00BC9D14 /* SnapKit.framework */,
+				97A4B2D31D504ADE00BC9D14 /* SnapKit iOS Tests.xctest */,
+				97A4B2D51D504ADE00BC9D14 /* SnapKit tvOS Tests.xctest */,
+				97A4B2D71D504ADE00BC9D14 /* SnapKit OSX Tests.xctest */,
+				97A4B2D91D504ADE00BC9D14 /* Example-iOS.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,10 +178,12 @@
 				97A4B13B1D4745D600BC9D14 /* Sources */,
 				97A4B13C1D4745D600BC9D14 /* Frameworks */,
 				97A4B13D1D4745D600BC9D14 /* Resources */,
+				97A4B2DE1D504AF700BC9D14 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				97A4B2DD1D504AF700BC9D14 /* PBXTargetDependency */,
 			);
 			name = L02;
 			productName = L02;
@@ -119,12 +216,70 @@
 			mainGroup = 97A4B1361D4745D600BC9D14;
 			productRefGroup = 97A4B1401D4745D600BC9D14 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 97A4B2C31D504ADE00BC9D14 /* Products */;
+					ProjectRef = 97A4B2C21D504ADE00BC9D14 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				97A4B13E1D4745D600BC9D14 /* L02 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		97A4B2CD1D504ADE00BC9D14 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 97A4B2CC1D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2CF1D504ADE00BC9D14 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 97A4B2CE1D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2D11D504ADE00BC9D14 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 97A4B2D01D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2D31D504ADE00BC9D14 /* SnapKit iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit iOS Tests.xctest";
+			remoteRef = 97A4B2D21D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2D51D504ADE00BC9D14 /* SnapKit tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit tvOS Tests.xctest";
+			remoteRef = 97A4B2D41D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2D71D504ADE00BC9D14 /* SnapKit OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit OSX Tests.xctest";
+			remoteRef = 97A4B2D61D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		97A4B2D91D504ADE00BC9D14 /* Example-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example-iOS.app";
+			remoteRef = 97A4B2D81D504ADE00BC9D14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		97A4B13D1D4745D600BC9D14 /* Resources */ = {
@@ -149,10 +304,19 @@
 				A8BF7A441D4F5C7F00B43868 /* CirCleView.swift in Sources */,
 				97A4B1431D4745D600BC9D14 /* AppDelegate.swift in Sources */,
 				A8738F701D476D6F00E6077B /* YuanViewController.swift in Sources */,
+				97A4B2781D50489300BC9D14 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97A4B2DD1D504AF700BC9D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SnapKit iOS";
+			targetProxy = 97A4B2DC1D504AF700BC9D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97A4B1461D4745D600BC9D14 /* Main.storyboard */ = {
@@ -264,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = L02/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XiDan;
@@ -277,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = L02/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XiDan;
